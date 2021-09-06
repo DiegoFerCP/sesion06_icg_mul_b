@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bombillo</title>
+</head>
+<body>
+    
+    <canvas id="circulo" width="500px" height="500px" style="border: 2px solid gray;"></canvas>
+
+    <script>
+        window.addEventListener('load', () => {
+            let canvasCirculo = document.getElementById('circulo');
+            let ctx = canvasCirculo.getContext('2d');
+
+            ctx.beginPath();
+       
+            ctx.arc(150, 150, 100, 0, 2 * Math.PI);
+       
+            ctx.stroke();
+            ctx.fillStyle = 'orange'
+            ctx.fill();
+ 
+       ctx.beginPath();
+       ctx.strokeStyle = 'orange'       
+            ctx.arc(150, 240, 40, 0, 1 * Math.PI);
+            ctx.stroke();
+            
+		
+       
+            
+        ctx.beginPath();
+        ctx.strokeStyle = 'orange'
+            ctx.arc(150, 250, 40, 0, 1 * Math.PI);
+            ctx.stroke();
+        
+        ctx.beginPath();
+        ctx.strokeStyle = 'gray'
+            ctx.arc(150, 260, 40, 0, 1 * Math.PI);
+            ctx.stroke();
+        
+        ctx.beginPath();
+         ctx.strokeStyle = 'gray';
+            ctx.arc(150, 270, 40, 0, 1 * Math.PI);
+            ctx.stroke();
+            
+       ctx.beginPath();
+         ctx.strokeStyle = 'orange';
+            ctx.arc(150, 280, 40, 0, 1 * Math.PI);
+            ctx.stroke();
+            
+       ctx.beginPath();
+         ctx.strokeStyle = 'orange';
+            ctx.arc(150, 290, 40, 0, 1 * Math.PI);
+            ctx.stroke();
+            
+     
+            
+             ctx.beginPath(); 
+       ctx.strokeStyle = '#FCEA11';
+       ctx.moveTo(140,130);
+       ctx.lineTo(130,140);
+       ctx.lineTo(140,190);
+       ctx.stroke()
+       
+              ctx.beginPath(); 
+       ctx.strokeStyle = '#FCEA11';
+       ctx.moveTo(190,130);
+       ctx.lineTo(190,190);
+       ctx.lineTo(190,190); 
+       ctx.stroke()
+       
+       ctx.beginPath();
+         ctx.strokeStyle = '#FC8D11';
+         ctx.moveTo(190, 130);
+         ctx.quadraticCurveTo(190, 110, 140, 130);
+         ctx.stroke();
+
+       
+        });
+        
+    </script>
+</body>
+</html>
